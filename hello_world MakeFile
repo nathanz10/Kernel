@@ -1,0 +1,14 @@
+% make
+make[1]: Entering directory `/usr/src/linux-2.6.10'
+ CC [M] /home/ldd3/src/misc-modules/hello.o
+ Building modules, stage 2.
+ MODPOST
+ CC /home/ldd3/src/misc-modules/hello.mod.o
+ LD [M] /home/ldd3/src/misc-modules/hello.ko
+make[1]: Leaving directory `/usr/src/linux-2.6.10'
+% su
+root# insmod ./hello.ko
+Hello, world
+root# rmmod hello
+Goodbye cruel world
+root#
